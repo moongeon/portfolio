@@ -145,5 +145,15 @@ ul{
   }
   .navbar__menu__item:hover{
     background-color: var(--color-dark-pink);
+  }
 
+  #home{
+    background: url("imgs/background.png") center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+  }
+  .home__avatar{
+    width: 450px;
+    border-radius: 50%;
+    border: 5px var(--color-light-white);
   }
