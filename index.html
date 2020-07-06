@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mungeun's Portfolio</title>
+    <meta name="description" content="enginner munguen" />
+    <meta name="author" content="mungeun" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/58715d72e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Narvar -->
+    <nav id="narbar">
+      <div id="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Mungeun</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My work</li>
+          <li class="navbar__menu__item">Testimonials</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <img
+        src="imgs/profile.png"
+        alt="Mungeun's profile photo"
+        class="home__avatar"
+      />
+      <h1 class="home__title">
+        Hello <br />
+        I'm Dream Coder
+      </h1>
+      <h2 class="home_discription">소프트웨어 개발자 서울</h2>
+      <button class="home__contact">CONTACT ME</button>
+    </section>
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p class="about__discription"></p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-windows"></i>
+          </div>
+          <h2 class="major__title">.NetFramwork</h2>
+          <div class="major__discription">C#, Xamarin</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <div class="major__discription">Android, Xamarin</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-End</h2>
+          <div class="major__discription">HTML, CSS</div>
+        </div>
+      </div>
+      <div class="about__job">
+        <div class="job">
+          <img class="job__logo" src="imgs/lotte.png" alt="lotte" />
+          <div class="job__description">
+            <p class="job__name">
+              롯데정보통신 스마트리테일팀 리테일플랫폼담당
+            </p>
+            <p class="job__period">2018.02 ~</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attrubutes</h2>
+        <p>
+          회사에서 POS개발을 주로 맡아서 했으며 <br />
+          사용했던언어는 C#, java를 주로 이용했습니다.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill_description">
+                <span>HTML</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tool__list">
+                <li><span>Visual Studio</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Android Studio</span></li>
+                <li><span>eclipse</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn active">
+          All <span class="category__count">8</span>
+        </button>
+        <button class="category__btn">
+          NetFramwork <span class="category__count">3</span>
+        </button>
+        <button class="category__btn">
+          Mobile <span class="category__count">3</span>
+        </button>
+        <button class="category__btn">
+          Front-End <span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="" class="project" data-type="front-end" target="blank">
+          <img
+            src="imgs/projects/lotte_department.png"
+            alt="lottedelartment"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>롯데백화점</h3>
+            <span>직승인 프로젝트 상품권POS파트</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="front-end" target="blank">
+          <img
+            src="imgs/projects/lotte_himart.png"
+            alt="lottehimart"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>롯데하이마트</h3>
+            <span>직승인 프로젝트 전개지원</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="front-end" target="blank">
+          <img
+            src="imgs/projects/lotte_mart.png"
+            alt="lottemart"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>롯데마트</h3>
+            <span>롯데모바일상품권 POS개발</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <h1>Testimonials</h1>
+      <h3>조언들</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="imgs/testimonial.jpg" alt="testimonial" />
+          <p>칭찬1</p>
+          <p>칭찬2</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">contact</h1>
+      <h2 class="contact__email">pyh92530@gmail.com</h2>
+      <div class="contact__icon">
+        <i class="fab fa-github"></i>
+      </div>
+      <p>Made by Mungeun</p>
+    </section>
+  </body>
+</html>
