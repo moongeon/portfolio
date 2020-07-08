@@ -253,6 +253,7 @@ p {
 }
 .skillset__title {
   color: var(--color-light-white);
+  
 }
 .skillset__left {
   flex-basis: 60%;
@@ -261,6 +262,11 @@ p {
 }
 .skill {
   margin-bottom: 8px;
+}
+.tool__list{
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 10px;
 }
 .skill_description {
   display: flex;
@@ -391,7 +397,7 @@ p {
 }
 
 .contact__title {
-  margin: 10px 0px;
+  margin: 5px 0px;  
 }
 
 .contact__links {
