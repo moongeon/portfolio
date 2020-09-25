@@ -20,6 +20,20 @@ document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// 최상단 버튼 이벤트
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight) {
+    arrowUp.classList.add("visible");
+  } else {
+    arrowUp.classList.remove("visible");
+  }
+});
+//최상단으로 이동
+arrowUp.addEventListener("click", (evnet) => {
+  window.scrollTo(0, 0);
+});
+
 const navbar__menu = document.querySelector(".navbar__menu");
 navbar__menu.addEventListener("click", (evnet) => {
   console.log(event.target.dataset.link);

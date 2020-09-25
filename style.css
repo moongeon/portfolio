@@ -253,7 +253,6 @@ p {
 }
 .skillset__title {
   color: var(--color-light-white);
-  
 }
 .skillset__left {
   flex-basis: 60%;
@@ -263,9 +262,9 @@ p {
 .skill {
   margin-bottom: 8px;
 }
-.tool__list{
+.tool__list {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   margin-bottom: 10px;
 }
 .skill_description {
@@ -397,7 +396,7 @@ p {
 }
 
 .contact__title {
-  margin: 5px 0px;  
+  margin: 5px 0px;
 }
 
 .contact__links {
@@ -408,6 +407,26 @@ p {
   transform: scale(1.2);
   transition: all var(--animation--duration) ease;
   color: var(--color-yellow);
+}
+
+/*Scroll*/
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: var(--font-regular);
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
