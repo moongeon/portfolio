@@ -1,4 +1,9 @@
 /*  Global Setting  */
+
+span{
+  margin-top: 5px;
+}
+
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -422,8 +427,14 @@ p {
   border-radius: 50%;
   opacity: 0;
   pointer-events: none;
+  border: 2px dashed var(--color-dark-pink);
   transition: opacity 300ms ease-in;
 }
+
+.arrow-up:hover{
+  transform: scale(1.1);
+}
+
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
